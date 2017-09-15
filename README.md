@@ -30,6 +30,10 @@ WordPress Themes
 * 最后更新：2017-08-21
 * 更新日志：[点击查看](https://gitee.com/Jarvis-Tang/JieStyle-Two/blob/master/CHANGELOG.md)
 
+## Git仓库
+* Github https://github.com/Jarvis-Tang/JieStyle-Two
+* 码云 https://gitee.com/Jarvis-Tang/JieStyle-Two
+
 ## 主题配置
 * 1、主题设置：后台 -> 外观 -> 主题 -> JieStyle设置
 * 2、左侧导航：后台 -> 外观 -> 主题 -> 菜单
