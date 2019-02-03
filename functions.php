@@ -5,7 +5,7 @@ Theme URI: https://tangjie.me/jiestyle-two
 Author: Jarvis Tang
 Author URI: https://tangjie.me/
 Description: A responsible theme for WordPress.
-Version: 2.3.6
+Version: 2.4
 License: GNU General Public License v3.0
 */
 function tangstyle_page_menu_args( $args ) {
@@ -146,15 +146,15 @@ function pagination($query_string){
     $pages = ceil($total_posts/$posts_per_page);
     if(1 != $pages){
         echo "<ul class='pagination'>";
-        echo ($paged > 2 && $paged+$range+1 > $pages && $showitems < $pages)? "<li><a href='".get_pagenum_link(1)."'><i class='fa fa-angle-double-left' aria-hidden='true'></i></a></li>":"";
-        echo ($paged > 1 && $showitems < $pages)? "<li><a href='".get_pagenum_link($prev)."'><i class='fa fa-angle-left' aria-hidden='true'></i></a></li>":"";
+        echo ($paged > 2 && $paged+$range+1 > $pages && $showitems < $pages)? "<li><a href='".get_pagenum_link(1)."'><i class='fas fa-angle-double-left'></i></a></li>":"";
+        echo ($paged > 1 && $showitems < $pages)? "<li><a href='".get_pagenum_link($prev)."'><i class='fas fa-angle-left'></i></a></li>":"";
         for ($i=1; $i <= $pages; $i++){
             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )){
                 echo ($paged == $i)? "<li class='active'><a href='".get_pagenum_link($i)."'>".$i."<span class='sr-only'>(current)</span></a></li>":"<li><a href='".get_pagenum_link($i)."'>".$i."</a></li>";
             }
         }
-    echo ($paged < $pages && $showitems < $pages) ? "<li><a href='".get_pagenum_link($next)."'><i class='fa fa-angle-right' aria-hidden='true'></i></a></li>" :"";
-    echo ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) ? "<li><a href='".get_pagenum_link($pages)."'><i class='fa fa-angle-double-right' aria-hidden='true'></i></a></li>":"";
+    echo ($paged < $pages && $showitems < $pages) ? "<li><a href='".get_pagenum_link($next)."'><i class='fas fa-angle-right'></i></a></li>" :"";
+    echo ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) ? "<li><a href='".get_pagenum_link($pages)."'><i class='fas fa-angle-double-right'></i></a></li>":"";
     echo "</ul>";
     }
 }
@@ -352,27 +352,27 @@ $options = array (
         "type" => "hr",
     ),
     array(
-        "name" => "打赏-是否启用",
+        "name" => "赞赏-是否启用",
         "id" => $shortname."_dashang",
         "type" => "select",
         "std" => "禁用",
         "options" => array("禁用", "启用")
     ),
     array(
-        "name" => "打赏-描述",
+        "name" => "赞赏-描述",
         "id" => $shortname."_dashang_info",
         "type" => "text",
-        "std" => "如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！",
+        "std" => "如果觉得我的文章对您有用，请随意赞赏。您的支持将鼓励我继续创作！",
         "explain" => "想对读者说的话"
     ),
     array(
-        "name" => "打赏-支付宝",
+        "name" => "赞赏-支付宝",
         "id" => $shortname."_dashang_alipay",
         "type" => "text",
         "std" => "https://tangjie.me/media/AliPay.png",
     ),
     array(
-        "name" => "打赏-微信",
+        "name" => "赞赏-微信",
         "id" => $shortname."_dashang_wechat",
         "type" => "text",
         "std" => "https://tangjie.me/media/WeixinPay.png",
@@ -407,7 +407,7 @@ function mytheme_admin() {
 ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
 <div class="container-fluid">
-    <h2 class="text-primary"><?php echo $themename; ?> Two <a href="https://tangjie.me/jiestyle-two" target="_blank" data-toggle="tooltip" data-placement="bottom" title="点击查看更新"><span class="badge">v2.3.6</span></a></h2>
+    <h2 class="text-primary"><?php echo $themename; ?> Two <a href="https://tangjie.me/jiestyle-two" target="_blank" data-toggle="tooltip" data-placement="bottom" title="点击查看更新"><span class="badge">v2.4</span></a></h2>
     <hr class="wp-header-end">
     <hr>
     <form class="form-horizontal" method="post">
