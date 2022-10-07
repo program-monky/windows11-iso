@@ -17,7 +17,7 @@ WordPress Themes
 * 支持 WordPress 的菜单系统，无限级下拉菜单（支持菜单鼠标悬停下拉功能）
 * 支持无限嵌套评论
 * 支持 Gravatar 头像显示，替换成了中国境内镜像地址
-* 支持 WordPress 4.x 和 5.x 版本
+* 支持 WordPress 4.x, 5.x, 6.x 版本
 * 支持 PHP 7.x 和 8.x 运行环境
 
 ## 版本信息
@@ -26,8 +26,8 @@ WordPress Themes
 * 作者博客：[https://tangjie.me](https://tangjie.me)
 * 开源协议：GNU General Public License v3.0
 * 首发时间：2016-11-20
-* 最新版本：v2.6.2
-* 最后更新：2021-07-30
+* 最新版本：v2.6.3
+* 最后更新：2022-10-07
 * 更新日志：[点击查看](CHANGELOG.md)
 
 ## 主题配置
